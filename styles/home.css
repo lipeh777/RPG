@@ -1,0 +1,133 @@
+body {
+    background-color: rgb(36, 36, 36);
+    width: 100vw;
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+main .logo {
+    margin-top: 10rem;
+}
+
+main .logo img {
+    width: 350px;
+}
+
+main .text {
+    text-align: center;
+}
+
+main .text h2 {
+    color: white;
+    font-size: 2rem;
+}
+
+main .text p {
+    color: white;
+    font-size: 1.5rem;
+}
+
+main .buttons {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+main .buttons .button {
+    padding: 1rem 2rem;
+    border-radius: 1.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+main .buttons .button:hover {
+    /* transform: translateY(-15px); */
+    transition: .25s;
+    transform: scale(1.1);
+}
+
+main .buttons .play {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1.5rem 0 1.5rem;
+    background: #ffbe1a;
+    border: none;
+    color: black;
+}
+
+main .buttons .outlined {
+    background: none;
+    border: 2px solid #FCB400;
+    color: #FCB400;
+    text-shadow: 1px 1px 1px black;
+}
+
+@media (max-width: 960px) {
+    main .text h2 {
+        color: white;
+        font-size: 1.75rem;
+    }
+    main .text p {
+        color: white;
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 800px) {
+    main .text h2 {
+        color: white;
+        font-size: 1.75rem;
+    }
+    main .text p {
+        color: white;
+        font-size: 1rem;
+    }
+    main .buttons {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    main .buttons .button {
+        padding: 1rem 3.6rem;
+        border-radius: 1.5rem;
+        font-size: 1.5rem;
+    }
+    main .buttons .play {
+        margin: 1rem 0 1rem 0;
+        background: #ffbe1a;
+        border: none;
+    }
+}
+
+@media (max-width: 645px) {
+    main .logo {
+        margin-top: 5rem;
+    }
+    main .logo img {
+        width: 300px;
+        height: 150px;
+    }
+    main .text h2 {
+        font-size: 1.5rem;
+    }
+    main .text p {
+        font-size: .75rem;
+    }
+    main .buttons button {
+        padding: 1rem 3.6rem;
+        border-radius: 1.5rem;
+        font-size: 1.5rem;
+    }
+}

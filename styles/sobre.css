@@ -1,0 +1,217 @@
+body {
+    background-image: url(/images/bg2.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+body::before {
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: -10;
+}
+
+header {
+    background: transparent;
+    padding: 1rem 0;
+    text-align: center;
+    width: 100%;
+}
+
+header .menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+header .menu .button {
+    padding: .75rem 4rem;
+}
+
+
+/* ========= INTRODUCTION ========= */
+
+.introduction {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10rem 1rem;
+    color: black;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+}
+
+.introduction h2 {
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.introduction p {
+    text-align: center;
+    font-size: 1.5rem;
+    width: 90%;
+}
+
+
+/* ========= EQUIPE ========= */
+
+#equipe h2 {
+    margin-top: 2rem;
+    font-size: 3rem;
+    text-align: center;
+    color: #FCB400;
+}
+
+.title {
+    text-align: center;
+    font-family: Poppins;
+    font-size: 35px;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.equipe-cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.equipe-cards .card {
+    width: 25rem;
+    height: 35rem;
+    font-size: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.equipe-cards .card:hover {
+    transform: translateY(-15px);
+    transition: .5s;
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+    background: #ddddff;
+    color: black;
+}
+
+.equipe-cards .card .user {
+    margin-top: 2rem;
+    border-radius: 15rem;
+    width: 15rem;
+    height: 15rem;
+}
+
+.equipe-cards .card .icon {
+    width: 2rem;
+    height: 2rem;
+    fill: #FCB400;
+}
+
+.equipe-cards .card:hover .icon{
+    fill: black;
+}
+
+.equipe-cards .card h4 {
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.equipe-cards .card p {
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.equipe-cards .card a {
+    font-weight: 500;
+    text-decoration: none;
+    color: #3498db;
+}
+
+
+/* ========= ORIENTADORES ========= */
+
+#orientadores h2 {
+    text-align: center;
+    color: #FCB400;
+    font-size: 3rem;
+}
+
+.orientadores-cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.orientadores-cards .card {
+    width: 25rem;
+    height: 35rem;
+    font-size: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.orientadores-cards .card:hover {
+    transform: translateY(-15px);
+    transition: .5s;
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+    background: #ddddff;
+    color: black;
+}
+
+.orientadores-cards .card .user {
+    margin-top: 1rem;
+    border-radius: 15rem;
+    width: 15rem;
+    height: 15rem;
+}
+
+.orientadores-cards .card .icon {
+    width: 2rem;
+    height: 2rem;
+    fill: #FCB400;
+}
+
+.orientadores-cards .card:hover .icon {
+    fill: black;
+}
+
+.orientadores-cards .card h4 {
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.orientadores-cards .card p {
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.orientadores-cards .card a {
+    font-weight: 500;
+    text-decoration: none;
+}

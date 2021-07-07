@@ -1,0 +1,116 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ========= BUTTON ========= */
+
+.button {
+    padding: 1rem 2rem;
+    border-radius: 1.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.button.play {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1.5rem 0 1.5rem;
+    background: #ffbe1a;
+    border: none;
+    color: black;
+}
+
+.button.outlined {
+    background: none;
+    border: 2px solid #FCB400;
+    color: #FCB400;
+    text-shadow: 1px 1px 1px black;
+}
+
+.button:hover {
+    transition: .25s;
+    transform: scale(1.1);
+}
+
+
+/* ========= ANIMAÇÃO MAQUINA DE ESCREVER ========= */
+
+.line {
+    /* cursor */
+    /* border-right: 2px solid rgba(255, 255, 255, 0.75); */
+    border-right: 2px solid #FCB400;
+    color: rgba(255, 255, 255, 0.75);
+    font-family: "Special Elite", monospace;
+    font-size: 2rem;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    display: flex;
+}
+
+.typing-animation {
+    animation: blinkCursor 500ms steps(100) infinite normal, typing 4s steps(100) 1s normal both;
+}
+
+
+/* movimento do cursor */
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 41rem;
+    }
+}
+
+
+/* cursor piscando */
+
+@keyframes blinkCursor {
+    from {
+        border-right-color: #FCB400;
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
+
+@media (max-width: 960px) {
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+        to {
+            width: 35rem;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+        to {
+            width: 27rem;
+        }
+    }
+}
+
+@media (max-width: 645px) {
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+        to {
+            width: 20.5rem;
+        }
+    }
+}
